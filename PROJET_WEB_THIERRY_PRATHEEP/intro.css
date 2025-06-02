@@ -1,0 +1,57 @@
+#intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1506765515384-028b60a970df');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 10000;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  #intro-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  #intro-overlay .sous-titre {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+  
+  #intro-overlay button {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: none;
+    background-color: #2c6e49;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #intro-overlay button:hover {
+    background-color: #1b4731;
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
